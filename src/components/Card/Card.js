@@ -3,35 +3,38 @@ import React from "react";
 const Card = ({ user }) => {
   return (
     <div className="container mt-5">
-      {user.map((usr) => (
-        <div className="sm-flex" key={usr.id}>
-          <div className="flex-auto text-gray-600 text-center bg-gray-400 px-5 py-5 m-2 rounded">
-            <div className="lg:flex lg:items-center">
-              <div className="lg-flex-shrink-0">
+      <div className="grid md:grid-cols-3 gap-5">
+        {user.map((usr) => (
+          <div
+            className=" text-gray-700 bg-gray-300 m-4 rounded-lg overflow-hidden shadow-lg"
+            key={usr.id}
+          >
+            <div className="">
+              <div className="w-full">
                 <img
                   src={`${usr.image}`}
                   alt="A person"
-                  className="rounded-lg lg:w-64"
+                  className="md:w-72 w-full"
                 />
               </div>
-              <div className="flex flex-col items-start mt-4 lg:mt-0 lg:ml-6">
-                <div className="uppercase tracking-wide text-md text-white">
+              <div className="flex flex-col lg:items-start mt-4 lg:mt-0">
+                <div className=" tracking-wide text-xs font-bold">
                   First Name : {usr.f_name}
                 </div>
-                <div className="uppercase tracking-wide text-md text-white ">
+                <div className="tracking-wide text-xs font-bold ">
                   Last Name : {usr.l_name}
                 </div>
                 <a
                   href={`${usr.email}`}
-                  className="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline"
+                  className="block mt-1 text-xs leading-tight font-semi-bold text-gray-900 hover:underline"
                 >
                   Email: {usr.email}
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

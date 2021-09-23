@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-4 py-2 rounded;
+}
+
+.bg-blue {
+  @apply bg-blue-500 text-white font-medium;
+}
+
+.bg-blue:hover {
+  @apply bg-blue-600;
+}

@@ -12,9 +12,15 @@ function App() {
     Users();
   }, []);
   return (
-    <div className="container mx-auto p-4">
-      <PrimaryButton>Hello</PrimaryButton>
-      <Card user={user} />
+    <div>
+      <nav className="mb-8 w-full flex justify-between items-center bg-gray-800 py-4 px-6">
+        <p className="text-white text-lg ">Sibteali Baqar</p>
+
+        <PrimaryButton>Hello</PrimaryButton>
+      </nav>
+      <div className="container p-4 w-screen">
+        <Card user={user} />
+      </div>
     </div>
   );
 }

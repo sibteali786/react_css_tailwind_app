@@ -6,7 +6,7 @@ const Card = ({ user }) => {
       <div className="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {user.map((usr) => (
           <div
-            className=" text-gray-700 bg-gray-300 m-4 rounded-lg overflow-hidden shadow-lg"
+            className=" text-gray-700 bg-blue-500 m-4 rounded-lg overflow-hidden shadow-lg"
             key={usr.id}
           >
             <div className="">

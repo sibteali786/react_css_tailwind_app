@@ -12,9 +12,9 @@ function App() {
     Users();
   }, []);
   return (
-    <div className="bg-gray-600">
-      <nav className="mb-8 w-full flex justify-between items-center bg-gray-800 py-4 px-6">
-        <p className="text-white text-lg ">Sibteali Baqar</p>
+    <div>
+      <nav className="mb-8 w-full flex justify-between items-center bg-gray-800 py-4 px-6 shadow-lg">
+        <p className="text-fontColor text-4xl ">Sibteali Baqar</p>
 
         <PrimaryButton>Hello</PrimaryButton>
       </nav>

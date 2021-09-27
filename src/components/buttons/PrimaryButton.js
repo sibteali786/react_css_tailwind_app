@@ -3,7 +3,7 @@ import React from "react";
 const PrimaryButton = (props) => {
   return (
     <div>
-      <button className=" btn bg-blue inline-block">
+      <button className=" btn bg-color inline-block tracking-widest ">
         {props.children}
       </button>
     </div>

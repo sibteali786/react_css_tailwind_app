@@ -20,8 +20,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#fb8500",
-        secondary: "#219ebc",
+        primary: "#283044",
+        secondary: "#78A1BB",
+        fontColor: "#EBF5EE",
+        buttonColor: "#BFA89E",
+        buttonColorDark: "#8B786D",
+      },
+      fontFamily: {
+        sans: ["Yanone Kaffeesatz"],
       },
     },
   },

@@ -3,14 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-primary m-0 p-0;
+}
+
 .btn {
-  @apply px-4 py-2 rounded;
+  @apply px-6 py-2 rounded;
 }
 
-.bg-blue {
-  @apply bg-blue-500 text-white font-medium;
+.bg-color {
+  @apply bg-buttonColor text-white font-medium;
 }
 
-.bg-blue:hover {
-  @apply bg-blue-600;
+.bg-color:hover {
+  @apply bg-buttonColorDark;
 }

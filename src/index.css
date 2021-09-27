@@ -6,15 +6,3 @@
 body {
   @apply bg-primary m-0 p-0;
 }
-
-.btn {
-  @apply px-6 py-2 rounded;
-}
-
-.bg-color {
-  @apply bg-buttonColor text-white font-medium;
-}
-
-.bg-color:hover {
-  @apply bg-buttonColorDark;
-}

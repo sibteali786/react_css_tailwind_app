@@ -6,3 +6,11 @@
 body {
   @apply bg-primary m-0 p-0;
 }
+
+.card {
+  @apply transition duration-500 ease-in-out shadow-xl;
+}
+
+.card:hover {
+  @apply transform scale-110;
+}
